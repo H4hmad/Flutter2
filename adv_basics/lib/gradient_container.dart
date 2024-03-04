@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:adv_basics/text-container.dart';
-import 'package:flutter/widgets.dart';
 
 const startAlignment = Alignment.topCenter;
 const endAlignment = Alignment.bottomCenter;
@@ -29,17 +27,17 @@ class GradientContainer extends StatelessWidget {
                       fontWeight: FontWeight.w500,
                       fontFamily: "Bebas Neue")),
               const SizedBox(height: 20),
-              const ElevatedButton(
+              OutlinedButton(
                   onPressed: () {},
                   style: TextButton.styleFrom(
                     // padding: const EdgeInsets.only(top: 20),
                     foregroundColor: Colors.white,
-                    backgroundColor: Color.fromARGB(255, 101, 64, 202),
-                    textStyle: TextStyle(
+                    backgroundColor: const Color.fromARGB(255, 101, 64, 202),
+                    textStyle: const TextStyle(
                       fontSize: 15,
                     ),
                   ),
-                  child: Text('Start Quiz')),
+                  child: const Text('Start Quiz')),
               const SizedBox(height: 60),
             ],
           ),
