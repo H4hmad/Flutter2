@@ -27,7 +27,7 @@ class GradientContainer extends StatelessWidget {
                       fontWeight: FontWeight.w500,
                       fontFamily: "Bebas Neue")),
               const SizedBox(height: 20),
-              OutlinedButton(
+              OutlinedButton.icon(
                   onPressed: () {},
                   style: TextButton.styleFrom(
                     // padding: const EdgeInsets.only(top: 20),
@@ -37,7 +37,8 @@ class GradientContainer extends StatelessWidget {
                       fontSize: 15,
                     ),
                   ),
-                  child: const Text('Start Quiz')),
+                  icon: const Icon(Icons.arrow_right_alt_outlined),
+                  label: const Text('Start Quiz')),
               const SizedBox(height: 60),
             ],
           ),
