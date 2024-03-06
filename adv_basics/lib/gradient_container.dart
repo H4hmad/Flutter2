@@ -18,8 +18,11 @@ class GradientContainer extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Image.asset('assets/images/quiz-logo.png',
-                  color: const Color.fromARGB(143, 255, 255, 255), width: 300),
+              Opacity(
+                  opacity: 0.7,
+                  child: Image.asset('assets/images/quiz-logo.png',
+                      color: const Color.fromARGB(143, 255, 255, 255),
+                      width: 300)),
               const SizedBox(height: 60),
               const Text('Learn Flutter the fun Way!!!',
                   style: TextStyle(
